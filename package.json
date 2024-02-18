@@ -1,6 +1,6 @@
 {
   "name": "@hex-stack/can",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Advanced authorization in plain English",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -45,7 +45,7 @@
     "@bitauth/libauth": "^1.17.1"
   },
   "devDependencies": {
-    "@ava/typescript": "^1.1.1",
+    "@ava/typescript": "^4.1.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
@@ -83,7 +83,8 @@
     "typescript": {
       "rewritePaths": {
         "src/": "build/main/"
-      }
+      },
+      "compile": false
     },
     "files": [
       "!build/module/**"
